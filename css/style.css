@@ -4,15 +4,17 @@ div.header {
   justify-content: space-between;
   padding: 10px;
 }
-.logo {
-  display: inline-block;
+div.logo {
+  display: flex;
+  align-items: center;
+  border: thin solid black;
 }
 .title {
-  display: inline-block;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   color: MediumAquamarine;
+  padding-left: 10px;
 }
 .header-text {
   font-family: Verdana;
@@ -21,4 +23,34 @@ div.header {
   text-decoration: underline;
   display: inline-block;
   padding: 10px;
+}
+.content {
+  display: flex;
+  border: thin solid black;
+}
+div.column {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.column.large {
+  width: 630px;
+  border: thin solid black;
+}
+.column.medium {
+  width: 300px;
+  border: thin solid black;
+}
+.column.small {
+  width: 240px;
+  border: thin solid black
+}
+.column.large p {
+  border: thin solid black;
+}
+.img-text {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
 }
