@@ -47,7 +47,11 @@ div.column {
 .column.large p {
   border: thin solid black;
 }
+.column.large.img {
+  display: flex;
+}
 .img-text {
+  position: relative;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
